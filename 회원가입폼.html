@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+/*모든 td안에 있는 텍스트에 대해 폰트크기를 10px로 지정*/
+td{
+	font-size:12px;
+}
+/*table 태그의 보더(외곽선)를 1픽셀의 회색으로*/
+table{
+	border:5px solid #ccccccc;
+	
+}
+
+</style>
+
+
+<title>회원가입폼</title>
+</head>
+<body>
+	<table border="1px" width="500px" align="center">
+		
+		<tr>
+			<td align="center" colspan="2">
+				<h2>회원가입</h2>
+				</td>
+		</tr>
+		<tr>
+			<td style="font-size:9px">ID</td>
+			<td><input type="text" placeholder="your ID...">
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="passsord" placeholder="비밀번호입력.." maxlength="12">
+			*12이하로 입력
+			</td>
+		</tr>
+
+		<tr>
+			<td>이름</td>
+			<td><input type="text" placeholder="your name...">
+			</td>
+		</tr>
+		<tr>
+			<td>우편번호</td>
+			<td>
+			<input type="text" readonly>
+			<button>우편번호 검색</button>
+			</td>
+		</tr>
+		<tr>
+			<td>주소</td>
+			<td>
+			<input type="text" placeholder="주소"><br>
+			<input type="text" placeholder="나머지주소">
+			</td>
+		</tr>
+		<tr>
+			<td>메일수신</td>
+			<td>
+			yes<input type="radio" name="receive">
+			no<input type="radio"name="receive">
+			</td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td>
+			<input type="text"placeholder="메일 아이디">
+			@
+			<select>
+				<option>naver</option>
+				<option>daum</option>
+				<option>google</option>
+				<option>직접입력</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>취미</td>
+			<td>
+				<input type="checkbox">영화
+				<input type="checkbox">스포츠
+				<input type="checkbox">여행
+				<input type="checkbox">맛집탐방
+			</td>
+		</tr>
+		<tr>
+			<td>가입메시지</td>
+			<td>
+				<textarea cols="45" rows="7"placeholder="가입시 하고싶은 말"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<button>가입</button>
+				<button>로그인</button>
+			</td>
+		</tr>
+
+</table>
+</body>
+</html>
